@@ -29,7 +29,7 @@ A react version of angular taproom project.
 Describe and show how to run the tests with code examples.
 
 ## Contributors
-
+Thank you to Ben Kiggen for the awesome keg graphic.
 
 ## License
 

@@ -1,8 +1,17 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
-function Header(){
+function Header(props){
+  function currentDate(){
+    let today = new Date();
+    return today
+  };
+  const date = currentDate();
   return (
-    <h1>Horace's Tap Room</h1>
+    <div>
+      <h1>Horace's Tap Room</h1>
+      <h2></h2> 
+    </div>
   );
 }
 
