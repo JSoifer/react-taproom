@@ -9,15 +9,14 @@ function KegDetails(props){
       <h4>{props.brand}</h4>
       <h4>${props.price}</h4>
       <h4>{props.abv}</h4>
-
     </div>
   );
 }
 KegDetails.propTypes = {
-  kegName: string,
-  brand: string,
-  price: number,
-  abv: number,
-  color: string
+  kegName: PropTypes.string,
+  brand: PropTypes.string,
+  price: PropTypes.number,
+  abv: PropTypes.number,
+  color: PropTypes.string
 };
 export default KegDetails;

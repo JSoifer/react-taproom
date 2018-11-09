@@ -4,11 +4,10 @@ import KegDetails from './KegDetails';
 function Keg(props){
   return (
     <div>
-      <h1>Keg</h1>
-      <KegDetails kegName={keg.kegName}
-        brand={keg.brand}
-        price={keg.price}
-        abv={keg.abv}
+      <KegDetails kegName={this.props.kegName}
+        brand={this.props.brand}
+        price={this.props.price}
+        abv={this.props.abv}
         key={index} />
 
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import AddKegButton from './AddKegButton';
+import KegDetails from './KegDetails';
 import Keg from './Keg';
 
 const masterKegList = [
@@ -25,11 +26,11 @@ const masterKegList = [
     color: '#F2B749'
   }
 ]
-function KegList(){
+function KegList(props){
   return (
     <div>
       <h1>KegList component</h1>
-      {masterKegList.map((kegDetails, index) =>
+      {masterKegList.map((keg, index) =>
         <KegDetails kegName={keg.kegName}
           brand={keg.brand}
           price={keg.price}
