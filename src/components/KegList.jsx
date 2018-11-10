@@ -2,6 +2,7 @@ import React from "react";
 import AddKegButton from './AddKegButton';
 import KegDetails from './KegDetails';
 import Keg from './Keg';
+import KegGraphic from './KegGraphic';
 
 const masterKegList = [
   {
@@ -29,14 +30,16 @@ const masterKegList = [
 function KegList(props){
   return (
     <div>
-      <h1>KegList component</h1>
+
       {masterKegList.map((keg, index) =>
         <KegDetails kegName={keg.kegName}
           brand={keg.brand}
           price={keg.price}
           abv={keg.abv}
-          key={index} />
+          key={keg.kegName} />
+
       )}
+      <KegGraphic/>
       <AddKegButton/>
     </div>
   );

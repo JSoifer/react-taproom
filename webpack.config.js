@@ -41,6 +41,10 @@ module.exports = {
          configFile: "./.eslintrc.json"
          }
        },
+        {
+          test: /\.svg$/,
+          loader: 'svg-inline-loader'
+      },
        {
         test: /\.(png|gif|jp(e*)g|svg)$/,
         use: {
