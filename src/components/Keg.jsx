@@ -4,7 +4,15 @@ import KegDetails from './KegDetails';
 function Keg(props){
   return (
     <div>
-      <KegDetails/>
+
+      {masterKegList.map((keg, index) =>
+        <KegDetails kegName={keg.kegName}
+          brand={keg.brand}
+          price={keg.price}
+          abv={keg.abv}
+          key={keg.kegName} />
+
+      )}
     </div>
   );
 }
