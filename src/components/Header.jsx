@@ -11,12 +11,18 @@ function Header(props){
   const headerTextStyle = {
     textAlign: 'center',
     fontSize: '3em',
-    paddingTop: '5vh'
+    paddingTop: '5vh',
+    color: 'white',
+    textShadow: "2px 2px black"
   }
   const headerStyle = {
     width: '100%',
     height: '20vh',
-    backgroundImage: 'url("https://images.pexels.com/photos/1267682/pexels-photo-1267682.jpeg?auto=compress&cs=tinysrgb&h=350")'
+    backgroundImage: 'url("https://images.pexels.com/photos/1267682/pexels-photo-1267682.jpeg?auto=compress&cs=tinysrgb&h=350")',
+    backgroundOrigin: 'border-box',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover'
   }
   return (
     <div style={headerStyle}>

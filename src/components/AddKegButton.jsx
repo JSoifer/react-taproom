@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function AddKegButton(){
   return (
-    <button>Add Keg Button</button>
+    <button><Link to="/addkeg">Add Keg</Link></button>
   );
 }
 
