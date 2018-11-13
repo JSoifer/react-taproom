@@ -7,11 +7,12 @@ import KegGraphic from './KegGraphic';
 function KegDetails(props){
   return (
     <div>
-      <hr/>
-      <h3>Name: {props.kegName}</h3>
-      <h4>Brand: {props.brand}</h4>
-      <h4>Price: ${props.price}</h4>
-      <h4>ABV:{props.abv}</h4>
+      <div>
+        <h3>Name: {props.kegName}</h3>
+        <h4>Brand: {props.brand}</h4>
+        <h4>Price: ${props.price}</h4>
+        <h4>ABV:{props.abv}</h4>
+      </div>
       <div>
         <EditButton/>
       </div>

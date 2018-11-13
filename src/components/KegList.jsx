@@ -2,8 +2,6 @@ import React from "react";
 
 import KegDetails from './KegDetails';
 import Keg from './Keg';
-import EditButton from './EditButton';
-import KegGraphic from './KegGraphic';
 
 const masterKegList = [
   {
@@ -38,9 +36,6 @@ function KegList(props){
           abv={kegDetails.abv}
           key={kegDetails.kegName} />
       )}
-      
-      <KegGraphic/>
-
     </div>
   );
 }
