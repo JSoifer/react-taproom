@@ -4,7 +4,7 @@ function KegGraphic(){
   return (
 
         <div className="beerGraphic">
-
+          <p>Graphic</p>
         </div>
 
   );

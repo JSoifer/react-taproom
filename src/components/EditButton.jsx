@@ -1,12 +1,12 @@
 import React from "react";
 
-function SellButton(){
+function EditButton(){
   return (
     <div>
-      <h1>SellButton</h1>
+      <button>EditButton</button>
 
     </div>
   );
 }
 
-export default SellButton;
+export default EditButton;

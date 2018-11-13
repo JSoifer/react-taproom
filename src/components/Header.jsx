@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import AddKegButton from './AddKegButton';
 
 function Header(props){
   function currentDate(){
     let today = new Date();
     return today
   };
-  const date = currentDate();
+  let date = currentDate(); 
 
   const headerTextStyle = {
     textAlign: 'center',
@@ -28,6 +29,7 @@ function Header(props){
     <div style={headerStyle}>
       <h1 style={headerTextStyle}>Horace's Tap Room</h1>
       <h2></h2>
+      <AddKegButton/>
     </div>
   );
 }
