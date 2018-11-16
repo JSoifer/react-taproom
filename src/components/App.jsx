@@ -7,13 +7,20 @@ import EditKegComponent from './EditKegComponent';
 
 class App extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterKegList: {}
+    };
+  }
+
 
   render(){
     return (
       <div>
         <Header/>
         <Switch>
-          <Route exact path='/' component={KegList} />
+          <Route exact path='/keglist' component={KegList} />
           <Route path='/addkeg' component={AddKegComponent} />
           <Route path='/editkeg' component={EditKegComponent} />
         </Switch>

@@ -1,33 +1,54 @@
 import React from 'react';
 
 function AddKegComponent(){
+  let _kegName = null;
+  let _brand = null;
+  let _price = null;
+  let _abv = null;
+
+
+  function handleNewKegFormSubmission(event) {
+    event.preventDefault();
+    _kegName.value = '';
+    _brand.value = '';
+    _price.value = '';
+    _abv.value = '';
+  }
+
   return (
     <div>
       <h3>Add Keg to Inventory</h3>
-      <form>
+      <form onSubmit={handleNewKegFormSubmission}>
         <input
           type='text'
           id='kegName'
-          placeholder='Name of Beer' />
+          placeholder='Name of Beer'
+          ref={(input) => {_kegName = input;}} />
         <input
           type='text'
           id='brand'
-          placeholder='brand' />
+          placeholder='brand'
+          ref={(input) => {_brand = input;}} />
         <input
           type='text'
           id='price'
-          placeholder='price' />
+          placeholder='price'
+          ref={(input) => {_price = input;}} />
         <input
           type='text'
           id='abv'
-          placeholder='ABV' />
+          placeholder='ABV'
+          ref={(input) => {_abv = input;}} /> 
         <label id='color-select'>Beer Color:</label>
-        <select value='beerColor'>
-          <option value="A">Light</option>
-          <option value="B">Golden</option>
-          <option value="C">Amber</option>
-          <option value="D">Dark</option>
+        <select
+          ref={select => this.beerColor = select}
+          name='beerColor'>
+          <option value='light'>Light</option>
+          <option value='golden'>Golden</option>
+          <option value='amber'>Amber</option>
+          <option value='dark'>Dark</option>
         </select>
+        <button type='submit'>Add</button>
       </form>
 
     </div>

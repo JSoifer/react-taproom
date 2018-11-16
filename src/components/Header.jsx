@@ -27,10 +27,14 @@ function Header(props){
     backgroundPosition: 'center',
     backgroundSize: 'cover'
   };
+  const linkStyle = {
+    textDecoration: 'none'
+  }
   return (
     <div style={headerStyle}>
-      <Link to='/'></Link>
-      <h1 style={headerTextStyle}>Horace's Tap Room</h1>
+      <Link style={linkStyle} to='/keglist'>
+        <h1 style={headerTextStyle}>Horace's Tap Room</h1>
+      </Link>
       <h2></h2>
       <AddKegButton/>
     </div>
