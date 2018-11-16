@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AddKegButton from './AddKegButton';
+import EditKegButton from './EditKegButton';
 
 function Header(props){
   function currentDate(){
     let today = new Date();
     return today;
   }
-  let date = currentDate(); 
+  let date = currentDate();
 
   const headerTextStyle = {
     textAlign: 'center',

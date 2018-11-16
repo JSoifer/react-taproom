@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import EditButton from './EditButton';
+import EditKegButton from './EditKegButton';
 import SellButton from './SellButton';
 import KegGraphic from './KegGraphic';
 
@@ -66,7 +66,7 @@ function Keg(props){
           </div>
         </div>
         <div className='buttons'>
-          <EditButton/>
+          <EditKegButton/>
           <SellButton/>
         </div>
       </div>
