@@ -12,8 +12,9 @@ A react version of angular taproom project.
 
 
 ## Initial Planning
-![Planning Sketch](/assets/images/IMG_1201.JPG)
-
+![Planning Sketch](./assets/images/IMG_1201.JPG)
+* updated plan after learning more about development using react with state.
+![Updated Planning Sketch](./assets/images/IMG_2630.JPG)
 ## Notes
 
 Adapting this app to react presented some challenges.  First, the components did not translate directly and the transfer of data was different.  It took a lot of thought to coordinate the react components, and I found myself trying to make them fit into my angular composition instead of allowing them to be part of their own structure.  I also have not been able to take the svg graphic from the angular app - I will have to do some more research and experimenting.
@@ -26,7 +27,6 @@ clone this repository and navigate into root directory
 run the following commands
 
 $ npm install
-$ npm init
 $ npm run start
 navigate to localhost: 8080
 
@@ -42,4 +42,4 @@ Thank you to Ben Kiggen for the awesome keg graphic.
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
+Licensed with the MIT license.
