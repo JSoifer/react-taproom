@@ -5,17 +5,22 @@ import KegList from './KegList';
 import AddKegComponent from './AddKegComponent';
 import EditKegComponent from './EditKegComponent';
 
-function App(){
-  return (
-    <div>
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={KegList} />
-        <Route path='/addkeg' component={AddKegComponent} />
-        <Route path='/editkeg' component={EditKegComponent} />
-      </Switch>
-    </div>
-  );
+class App extends React.Component {
+
+
+  render(){
+    return (
+      <div>
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={KegList} />
+          <Route path='/addkeg' component={AddKegComponent} />
+          <Route path='/editkeg' component={EditKegComponent} />
+        </Switch>
+      </div>
+    );
+
+  }
 }
 
 export default App;

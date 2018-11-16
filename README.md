@@ -15,6 +15,8 @@ A react version of angular taproom project.
 ![Planning Sketch](src/assets/images/IMG_1201.JPG)
 * updated plan after learning more about development using react with state.
 ![Updated Planning Sketch](src/assets/images/IMG_2630.JPG)
+* updated a second time to simplify application
+![Updated Planning Sketch](src/assets/images/ImG_2665.JPG)
 
 
 ## Notes

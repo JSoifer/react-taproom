@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import AddKegButton from './AddKegButton';
 import EditKegButton from './EditKegButton';
@@ -28,6 +29,7 @@ function Header(props){
   };
   return (
     <div style={headerStyle}>
+      <Link to='/'></Link>
       <h1 style={headerTextStyle}>Horace's Tap Room</h1>
       <h2></h2>
       <AddKegButton/>
