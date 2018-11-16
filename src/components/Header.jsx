@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
 import AddKegButton from './AddKegButton';
 
 function Header(props){
   function currentDate(){
     let today = new Date();
-    return today
-  };
+    return today;
+  }
   let date = currentDate(); 
 
   const headerTextStyle = {
@@ -14,8 +14,8 @@ function Header(props){
     fontSize: '3em',
     paddingTop: '5vh',
     color: 'white',
-    textShadow: "2px 2px black"
-  }
+    textShadow: '2px 2px black'
+  };
   const headerStyle = {
     width: '100%',
     height: '20vh',
@@ -24,7 +24,7 @@ function Header(props){
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover'
-  }
+  };
   return (
     <div style={headerStyle}>
       <h1 style={headerTextStyle}>Horace's Tap Room</h1>

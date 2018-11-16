@@ -1,6 +1,4 @@
-import React from "react";
-
-import KegDetails from './KegDetails';
+import React from 'react';
 import Keg from './Keg';
 
 const masterKegList = [
@@ -25,16 +23,16 @@ const masterKegList = [
     abv: 5.5,
     color: '#F2B749'
   }
-]
+];
 function KegList(props){
   return (
     <div>
-      {masterKegList.map((kegDetails) =>
-        <KegDetails kegName={kegDetails.kegName}
-          brand={kegDetails.brand}
-          price={kegDetails.price}
-          abv={kegDetails.abv}
-          key={kegDetails.kegName} />
+      {masterKegList.map((keg) =>
+        <Keg kegName={keg.kegName}
+          brand={keg.brand}
+          price={keg.price}
+          abv={keg.abv}
+          key={keg.kegName} />
       )}
     </div>
   );

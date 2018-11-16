@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function EditButton(){
   return (
     <div>
-      <button>EditButton</button>
+      <button><Link to="/editkeg">Edit Keg</Link></button>
 
     </div>
   );
