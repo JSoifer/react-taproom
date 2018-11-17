@@ -32,7 +32,7 @@ function Header(props){
   };
   return (
     <div style={headerStyle}>
-      <Link style={linkStyle} to='/keglist'>
+      <Link style={linkStyle} to='/'>
         <h1 style={headerTextStyle}>Horace's Tap Room</h1>
       </Link>
       <h2></h2>
