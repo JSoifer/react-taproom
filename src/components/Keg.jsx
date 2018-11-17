@@ -45,16 +45,16 @@ function Keg(props){
           .liquid {
             height: 200px;
             width: 175px;
-            background-color: yellow;
+            background-color: gold;
             position: absolute;
             transform: translateY(-10px);
             z-index: -1;
           }
           `}</style>
       <div>
-        <h3>Name: {props.kegName}</h3>
-        <h4>Brand: {props.brand}</h4>
-        <h4>Price: ${props.price}</h4>
+        <h1>{props.kegName}</h1>
+        <h2>Brand: {props.brand}</h2>
+        <h3>Price: ${props.price}</h3>
         <h4>ABV:{props.abv}</h4>
       </div>
       <div>

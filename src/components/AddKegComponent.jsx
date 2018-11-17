@@ -10,7 +10,8 @@ function AddKegComponent(props){
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    props.onNewKegCreation({names: _kegName.value, brand: _brand.value, price: _price.value, abv: _abv.value});
+    console.log('hi');
+    props.onNewKegCreation({kegName: _kegName.value, brand: _brand.value, price: _price.value, abv: _abv.value});
     _kegName.value = '';
     _brand.value = '';
     _price.value = '';
