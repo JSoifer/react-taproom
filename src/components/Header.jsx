@@ -29,7 +29,7 @@ function Header(props){
   };
   const linkStyle = {
     textDecoration: 'none'
-  }
+  };
   return (
     <div style={headerStyle}>
       <Link style={linkStyle} to='/keglist'>

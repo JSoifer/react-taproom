@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function AddKegComponent(){
+function AddKegComponent(props){
   let _kegName = null;
   let _brand = null;
   let _price = null;
@@ -9,6 +10,7 @@ function AddKegComponent(){
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
+    props.onNewKegCreation({names: _kegName.value, brand: _brand.value, price: _price.value, abv: _abv.value});
     _kegName.value = '';
     _brand.value = '';
     _price.value = '';
@@ -38,21 +40,14 @@ function AddKegComponent(){
           type='text'
           id='abv'
           placeholder='ABV'
-          ref={(input) => {_abv = input;}} /> 
-        <label id='color-select'>Beer Color:</label>
-        <select
-          ref={select => this.beerColor = select}
-          name='beerColor'>
-          <option value='light'>Light</option>
-          <option value='golden'>Golden</option>
-          <option value='amber'>Amber</option>
-          <option value='dark'>Dark</option>
-        </select>
+          ref={(input) => {_abv = input;}} />
         <button type='submit'>Add</button>
       </form>
 
     </div>
   );
 }
-
+AddKegComponent.propTypes = {
+  onNewKegCreation: PropTypes.func
+};
 export default AddKegComponent;

@@ -10,18 +10,23 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: {}
+      masterKegList: []
     };
+    this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
   }
-
+  handleAddingNewKegToList(newKeg) {
+    let newMasterKegList = JSON.parse(JSON.stringify(this.state.masterKegList));
+    newMasterKegList.push(newKeg);
+    this.setState({masterKegList: newMasterKegList});
+  }
 
   render(){
     return (
       <div>
         <Header/>
         <Switch>
-          <Route exact path='/keglist' component={KegList} />
-          <Route path='/addkeg' component={AddKegComponent} />
+          <Route exact path='/' render={()=><KegList kegList={this.state.masterKegList} />} />
+          <Route path='/addkeg' render={()=><AddKegComponent onNewKegCreation={this.handleAddingNewKegToList} />} />
           <Route path='/editkeg' component={EditKegComponent} />
         </Switch>
       </div>
