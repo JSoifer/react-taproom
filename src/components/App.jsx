@@ -10,14 +10,21 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: []
+      masterKegList: [],
+      pintsRemaining: null
     };
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
+    this.handleSale = this.handleSale.bind(this);
   }
   handleAddingNewKegToList(newKeg) {
     let newMasterKegList = JSON.parse(JSON.stringify(this.state.masterKegList));
     newMasterKegList.push(newKeg);
     this.setState({masterKegList: newMasterKegList});
+  }
+  handleSale(newKeg) {
+    let newState = JSON.parse(JSON.stringify(this.state));
+    newState.pintsRemaining --;
+    this.setState(newState);
   }
 
   render(){
@@ -25,7 +32,7 @@ class App extends React.Component {
       <div>
         <Header/>
         <Switch>
-          <Route exact path='/' render={()=><KegList  kegList={this.state.masterKegList} />} />
+          <Route exact path='/' render={()=><KegList  kegList={this.state.masterKegList} onSale={this.state.handleSale}/>} />
           <Route path='/addkeg' render={()=><AddKegComponent onNewKegCreation={this.handleAddingNewKegToList} />} />
           <Route path='/editkeg' component={EditKegComponent} />
         </Switch>

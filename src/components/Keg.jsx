@@ -5,6 +5,7 @@ import SellButton from './SellButton';
 import KegGraphic from './KegGraphic';
 
 function Keg(props){
+
   return (
     <div className='kegDetailsContainer'>
       <style jsx>{`
@@ -56,6 +57,7 @@ function Keg(props){
         <h2>Brand: {props.brand}</h2>
         <h3>Price: ${props.price}</h3>
         <h4>ABV:{props.abv}</h4>
+        <h4>Pints Remaining:{props.pintsRemaining}</h4>
       </div>
       <div>
         <div className='kegGraphicDiv'>
@@ -78,6 +80,7 @@ Keg.propTypes = {
   brand: PropTypes.string,
   price: PropTypes.number,
   abv: PropTypes.number,
-  color: PropTypes.string
+  color: PropTypes.string,
+  onSale: PropTypes.func
 };
 export default Keg;

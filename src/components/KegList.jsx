@@ -34,15 +34,17 @@ function KegList(props){
             brand={keg.brand}
             price={keg.price}
             abv={keg.abv}
+            pintsRemaining={keg.pintsRemaining}
             key={keg.kegName} />
         )}
       </div>
-   <div>
+      <div>
         {props.kegList.map((newKeg) =>
           <Keg kegName={newKeg.kegName}
             brand={newKeg.brand}
             price={newKeg.price}
             abv={newKeg.abv}
+            pintsRemaining={newKeg.pintsRemaining}
             key={newKeg.kegName} />
         )}
       </div>
