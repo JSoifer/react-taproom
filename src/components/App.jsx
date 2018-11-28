@@ -10,8 +10,32 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: [],
-      pintsRemaining: null
+      masterKegList: [
+        {
+          kegName: 'Oktoberfest Marzen',
+          brand: 'Hacker-Pschorr',
+          price: 5.25,
+          abv: 5.5,
+          color: '#ff8C15',
+          pintsRemaining: 124
+        },
+        {
+          kegName: 'Dunkel',
+          brand: 'Hofbrau',
+          price: 5.25,
+          abv: 5.5,
+          color: '#44110E',
+          pintsRemaining: 124
+        },
+        {
+          kegName: 'Weissbier',
+          brand: 'Paulaner',
+          price: 5.25,
+          abv: 5.5,
+          color: '#F2B749',
+          pintsRemaining: 124
+        }
+      ]
     };
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
     this.handleSale = this.handleSale.bind(this);

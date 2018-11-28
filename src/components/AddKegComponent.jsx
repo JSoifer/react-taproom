@@ -43,32 +43,32 @@ function AddKegComponent(props){
           }
 
           `}</style>
-        <div className='container'>
-          <h3>Add Keg to Inventory</h3>
-          <form id='addForm' onSubmit={handleNewKegFormSubmission}>
-            <input
-              type='text'
-              id='kegName'
-              placeholder='Name of Beer'
-              ref={(input) => {_kegName = input;}} />
-            <input
-              type='text'
-              id='brand'
-              placeholder='brand'
-              ref={(input) => {_brand = input;}} />
-            <input
-              type='text'
-              id='price'
-              placeholder='price'
-              ref={(input) => {_price = input;}} />
-            <input
-              type='text'
-              id='abv'
-              placeholder='ABV'
-              ref={(input) => {_abv = input;}} />
-            <button type='submit'>Add</button>
-          </form>
-        </div>
+      <div className='container'>
+        <h3>Add Keg to Inventory</h3>
+        <form id='addForm' onSubmit={handleNewKegFormSubmission}>
+          <input
+            type='text'
+            id='kegName'
+            placeholder='Name of Beer'
+            ref={(input) => {_kegName = input;}} />
+          <input
+            type='text'
+            id='brand'
+            placeholder='brand'
+            ref={(input) => {_brand = input;}} />
+          <input
+            type='text'
+            id='price'
+            placeholder='price'
+            ref={(input) => {_price = input;}} />
+          <input
+            type='text'
+            id='abv'
+            placeholder='ABV'
+            ref={(input) => {_abv = input;}} />
+          <button type='submit'>Add</button>
+        </form>
+      </div>
     </div>
   );
 }
