@@ -45,7 +45,7 @@ class App extends React.Component {
     newMasterKegList.push(newKeg);
     this.setState({masterKegList: newMasterKegList});
   }
-  handleSale(newKeg) {
+  handleSale(keg) {
     let newState = JSON.parse(JSON.stringify(this.state));
     newState.pintsRemaining --;
     this.setState(newState);

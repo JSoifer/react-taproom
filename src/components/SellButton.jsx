@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 function SellButton({onSale}){
 
   function sellPint() {
-    console.log('Sell Pint');
     onSale();
   }
 
